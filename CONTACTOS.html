@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu lateral dinamico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="container">
+        <div class="sidebar">
+            <div class="side-hide">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+
+            <img src="NBA-Logo.png" width="60" alt="LOGO">
+            <ul>
+                <li><a href="index"> INICIO </a></li>
+                <li><a href="CALENDARIO.html"> CALENDARIO </a></li>
+                <li><a href="FICHAS.html"> FICHAS </a></li>
+                <li><a href="EQUIPOS.html"> EQUIPOS </a></li>
+                <li><a href="CONTACTOS.html"> CONTACTOS </a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h2>CONTACTOS</h2>
+                
+            </h2>
+            <br>
+            <br>
+            <p> La práctica deportiva es un evento sumamente importante
+                 para los adolescentes debido a que el deporte por lo general juega un papel importante 
+                 en la vida en el desarroño del organismo de los individuos
+                 </p>
+            <p> es importante a que no te quedes atras y saber mas sobre la liga</p>
+               <br>
+                <p> no olvides seguirnos en las siguientes redes sociales</p>
+               <br>
+        
+               <br>
+               <p>
+            <img src="imagenes/dos.jpg" width="50" alt="imagen">WATSAPP: 9514615826-9513336589
+        </p>
+        <br>
+
+        <br>
+        <p>
+            <img src="imagenes/tres.jpg" width="50" alt="imagen"> FACEBOOK: BASQUET_OAX 
+        </p>
+        <br>
+
+        <br>
+               <p>
+            <img src="imagenes/cuat.jpg" width="50" alt="imagen"> OAXBASQ33MX
+        </p>
+        <br>
+
+        <br>
+               <p>
+            <img src="imagenes/you.jpg" width="50" alt="imagen"> YOUTUBE: BASQUET_OAX.MX
+        </p>
+        <br>
+
+            <br>
+                <center>
+                <img src="imagenes/hh.jpg" width="350" alt="imagen">
+             <br>   
+            </center>
+            <br>
+            <br>
+    
+            <center><button>Mostrar Menu</button></center>
+        </div>
+        
+
+    </section>
+
+    <!-- JS jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+
+        // Mostrar Sidebar
+        $("button").on('click', function() {
+            $(".container").toggleClass("show");
+        });
+
+        $(".side-hide").on('click', function() {
+            $(".container").toggleClass("show");
+        })
+
+    </script>
+
+</body>
+
+</html>

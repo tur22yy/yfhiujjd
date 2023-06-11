@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu lateral dinamico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="container">
+        <div class="sidebar">
+            <div class="side-hide">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+
+            <img src="NBA-Logo.png" width="60" alt="LOGO">
+            <ul>
+                <li><a href="index"> INICIO </a></li>
+                <li><a href="CALENDARIO.html"> CALENDARIO </a></li>
+                <li><a href="FICHAS.html"> FICHAS </a></li>
+                <li><a href="EQUIPOS.html"> EQUIPOS </a></li>
+                <li><a href="CONTACTOS.html"> CONTACTOS </a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h2>EQUIPOS</h2>
+                
+            </h2>
+            <br>
+            <br>
+            <p>los equipos mas destacados del momento
+                 </p>
+                <center>
+            <br>
+                <img src="imagenes/equipos.jpg" width="510" alt="imagen">
+            </center>
+            <br>
+            <br>
+            <br>
+            <p>
+                <img src="imagenes/vol7.jpg" width="50" alt="imagen">  CHICAGO BULLS: Fundado en 1966.
+                 Es el tercer equipo profesional con sede en esta ciudad tras Chicago 
+                Packers/Zephyrs y Chicago Stags, equipo que participó en los años 1940 en la BAA, 
+                antigua denominación de la liga profesional norteamericana de baloncesto.
+            </p>
+            <br>
+           <center>
+            <img src="imagenes/vol8.jpg" width="400" alt="imagen">
+            <img src="imagenes/vol9.jpg" width="400" alt="imagen">
+        </center> 
+
+            <br>
+            <p> <img src="imagenes/vol10.jpg" width="50" alt="imagen">BOSTON CELTICS:
+                El equipo fue fundado en 1946 por Walter Brown, de acuerdo con la enciclopedia Britannica. 
+                Desde entonces y hasta la fecha, siempre han sido los Boston Celtics, señala la NBA
+            </p>
+            <br>
+
+            <br>
+            <p>Jugaron en la Basketball Association of America (BAA) desde 1946 (año en que se creó dicha liga) hasta 1949
+            <p>
+            <br>
+
+            <br>
+            <P> Los Celtics fueron uno de los fundadores de la liga que ahora conocemos, la National Basketball Association (NBA), 
+                que se inició en la temporada 1949-1950luego de que la BAA absorbiera a los equipo
+            </P>
+            <br>
+            <center><img src="imagenes/vol11.jpg" width="400" alt="imagen">
+            </center>
+    
+            <center><button>Mostrar Menu</button></center>
+        </div>
+        
+
+    </section>
+
+    <!-- JS jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+
+        // Mostrar Sidebar
+        $("button").on('click', function() {
+            $(".container").toggleClass("show");
+        });
+
+        $(".side-hide").on('click', function() {
+            $(".container").toggleClass("show");
+        })
+
+    </script>
+
+</body>
+
+</html>

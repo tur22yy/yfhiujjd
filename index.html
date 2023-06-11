@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu lateral dinamico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="container">
+        <div class="sidebar">
+            <div class="side-hide">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+
+            <img src="NBA-Logo.png" width="60" alt="LOGO">
+            <ul>
+          <li><a href="index.html"> INICIO </a></li>
+          <li><a href="CALENDARIO.html"> CALENDARIO </a></li>
+          <li><a href="FICHAS.html"> FICHAS </a></li>
+          <li><a href="EQUIPOS.html"> EQUIPOS </a></li>
+          <li><a href="CONTACTOS.html"> CONTACTOS </a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h2>BASQUET BALL</h2>
+            
+            
+        <br>
+        <br>
+        <p>¡BASQUET BALL SIN FRONTERA"!
+
+           una de las frases mas famosas de michael jordan para obtener exito en el mundo deportivo basquetbolistico es;
+            he fallado mas de 90000 mil tiros en mi carrera. He perdido más de 300 partidos.
+             En 26 ocasiones me confiaron el tiro ganador y fallé. 
+             
+            He fracasado una y otra y 
+             otra vez en mi vida y por eso he tenido éxito 
+            </p>
+    
+        <br>
+        <center>
+            
+            <img src="BASKETBALL.jpg" width="700" alt="imagen17">
+        </center>
+        <p>Solo juega, diviértete, disfruta el partido.
+            Siempre hay que disfrutar de lo que hacemos.
+            Para aprender a triunfar, primero debes aprender a fracasar.
+            Si utilizamos cada derrota como aprendizaje, mejoraremos. Además, 
+            sabremos valorar más nuestros triunfos porque comprenderemos cuánto nos ha costado conseguirlos.
+            El talento gana partidos, pero el trabajo en equipo y la inteligencia ganan campeonatos.
+             </p>
+             <center>
+            
+                <img src="digas.jpg" width="500" alt="imagen17">
+            </center>
+             <p>Un líder no tiene excusas. Tiene que haber calidad en todo lo que haces. Fuera de la cancha, en la cancha, en el aula.
+                Ser líder es un trabajo de tiempo completo, siempre deben dar lo mejor de sí a las personas que los siguen.
+                
+                Si no puedes dejar de pensar en ello, no dejes de trabajar en ello.
+                Debemos hacer todo lo posible por conseguir lo que deseamos.
+                
+                Algunos quieren que ocurra, otros desean que ocurriese, otros hacen que ocurra.
+                 </p>
+        <br>
+        <br>
+    
+            <center><button>Mostrar Menu</button></center>
+        </div>
+        
+
+    </section>
+
+    <!-- JS jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+
+        // Mostrar Sidebar
+        $("button").on('click', function() {
+            $(".container").toggleClass("show");
+        });
+
+        $(".side-hide").on('click', function() {
+            $(".container").toggleClass("show");
+        })
+
+    </script>
+
+</body>
+
+</html>

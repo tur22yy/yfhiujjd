@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu lateral dinamico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="container">
+        <div class="sidebar">
+            <div class="side-hide">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+
+            <img src="NBA-Logo.png" width="60" alt="LOGO">
+            <ul>
+                <li><a href="index."> INICIO </a></li>
+                <li><a href="CALENDARIO.html"> CALENDARIO </a></li>
+                <li><a href="FICHAS.html"> FICHAS </a></li>
+                <li><a href="EQUIPOS.html"> EQUIPOS </a></li>
+                <li><a href="CONTACTOS.html"> CONTACTOS </a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h2>FICHAS</h2>
+                
+            </h2>
+            <br>
+            <br>
+            <p>La determinación social del rendimiento físico-deportivo, como la de todo proceso de la vida humana, 
+                 es producto de las relaciones entre: los procesos generales de la sociedad
+                 </p>
+                <center>
+                <img src="imagenes/ficha2.jpg" width="500" alt="imagen">
+            </center>
+            <center>
+            <p>¿Cuáles son algunos requisitos para ser un jugador de baloncesto?
+
+                Altura Un equipo de baloncesto es generalmente muy fácil de detectar en un aeropuerto. Son los chicos altos. ...
+                Resistencia Para llegar a ser un jugador de baloncesto con éxito, es necesario tener excelente resistencia. ...
+                Estado atlético y agilidad Si bien la altura y la resistencia te ayudará a tu causa, el baloncesto también se basa en gran medida en el estado atlético. ...
+                Fuerza y ​​resistencia ... 
+            </center>
+                 </p>
+            <br>
+            <br>
+    
+            <center><button>Mostrar Menu</button></center>
+        </div>
+        
+
+    </section>
+
+    <!-- JS jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+
+        // Mostrar Sidebar
+        $("button").on('click', function() {
+            $(".container").toggleClass("show");
+        });
+
+        $(".side-hide").on('click', function() {
+            $(".container").toggleClass("show");
+        })
+
+    </script>
+
+</body>
+
+</html>

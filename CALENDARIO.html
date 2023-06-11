@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu lateral dinamico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="container">
+        <div class="sidebar">
+            <div class="side-hide">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+
+            <img src="NBA-Logo.png" width="60" alt="LOGO">
+            <ul>
+                
+                <li><a href="index">  INICIO  </a></li>
+                <li><a href="CALENDARIO.html">  CALENDARIO </a></li>
+                <li><a href="FICHAS.html">  FICHAS  </a></li>
+                <li><a href="EQUIPOS.html">  EQUIPOS  </a></li>
+                <li><a href="CONTACTOS.html">  CONTACTOS  </a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h2>CALENDARIO</h2>
+                
+            </h2>
+            <br>
+            <br>
+            <p>en este portal se estaran actualizando las fechas de cada encuentro de cada selecion de la NBA  
+                 </p>
+            
+                <center>
+                <img src="imagenes/calendario 1.jpg" width="500" alt="imagen">
+            </center>
+            <br>
+            <p>Resultados de NBA      
+            </p>
+                 <p>Lunes, 12 de Junio, 2023
+                </p>
+                <br>
+                <p> <img src="imagenes/mia.png" width="30" alt="imagen">Heat
+                    (44-3817-24Visitante)
+                </p>
+                <br>
+                <p> <img src="imagenes/nug.png" width="30" alt="imagen">Nuggets
+                    (53-2934-7Local) 
+                </p>
+            <center>
+                <img src="imagenes/vol3.jpg" width="500" alt="imagen">
+            </center>
+            
+            <br>
+            <br>
+            <center>
+                <img src="imagenes/vol2.jpg" width="400" alt="imagen">
+                <img src="imagenes/vol4.jpg" width="400" alt="imagen">
+            </center>
+           <br>
+            <p>proximos encuentros 
+                 </p>
+                 <br>
+                 <center>
+                    <img src="imagenes/vol6.jpg" width="500" alt="imagen">
+                </center>
+
+    
+            <center><button>Mostrar Menu</button></center>
+        </div>
+        
+
+    </section>
+
+    <!-- JS jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+
+        // Mostrar Sidebar
+        $("button").on('click', function() {
+            $(".container").toggleClass("show");
+        });
+
+        $(".side-hide").on('click', function() {
+            $(".container").toggleClass("show");
+        })
+
+    </script>
+
+</body>
+
+</html>
